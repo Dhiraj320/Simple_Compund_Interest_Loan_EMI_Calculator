@@ -1,0 +1,110 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Important for responsive design */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px; /* Slightly narrower to fit 3 cards better */
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Colors for Headers */
+.simple-header { background: linear-gradient(135deg, #007bff, #0056b3); } /* Blue */
+.compound-header { background: linear-gradient(135deg, #28a745, #1e7e34); } /* Green */
+.loan-header { background: linear-gradient(135deg, #6f42c1, #59359a); } /* Purple */
+
+.card-header h2 { margin: 0; font-size: 1.4rem; }
+.card-body { padding: 25px; }
+
+/* Input Styling */
+.input-group { margin-bottom: 15px; }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-simple { background-color: #007bff; }
+.btn-simple:hover { background-color: #0056b3; }
+
+.btn-compound { background-color: #28a745; }
+.btn-compound:hover { background-color: #218838; }
+
+.btn-loan { background-color: #6f42c1; }
+.btn-loan:hover { background-color: #59359a; }
+
+/* Result Styling */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #ccc;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
